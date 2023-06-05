@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.field_price
+field_name: field_price
+entity_type: node
+type: float
+settings:
+  max_length: 255
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

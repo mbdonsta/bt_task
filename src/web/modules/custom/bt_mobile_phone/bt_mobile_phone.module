@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function bt_mobile_phone_theme()
+{
+  return [
+    'mobile_phone_block' => [
+      'variables' => [
+        'entity' => NULL
+      ],
+    ],
+  ];
+}

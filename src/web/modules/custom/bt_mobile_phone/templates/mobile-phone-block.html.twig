@@ -1,0 +1,29 @@
+{% if entity %}
+<div class="mobile-phone-block">
+  {% if entity.field_bt_image.entity %}
+    <div class="mobile-phone-block__image">
+      <img width="250" src="{{ file_url(entity.field_bt_image.entity.fileuri) }}">
+    </div>
+  {% endif %}
+  {% if entity.field_brand.entity or entity.field_model.value %}
+    <h3 class="mobile-phone-block__title">
+      {% if entity.field_brand.entity %}
+        {{ entity.field_brand.entity.label }}
+      {% endif %}
+      {% if entity.field_model.value %}
+        {{ entity.field_model.value }}
+      {% endif %}
+    </h3>
+  {% endif %}
+  {% if entity.field_price.value %}
+    <div class="mobile-phone-block__price">
+      {{ entity.field_price.value }} &euro;
+    </div>
+  {% endif %}
+  {% if entity.field_available.value %}
+    <div class="mobile-phone-block__availability">
+      {{ entity.field_available.value == 'yes' ? 'Available' : 'Out Of Stock' }}
+    </div>
+  {% endif %}
+</div>
+{% endif %}

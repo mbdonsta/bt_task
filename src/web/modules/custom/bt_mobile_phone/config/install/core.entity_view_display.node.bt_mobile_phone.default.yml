@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bt_mobile_phone.field_model
+    - field.field.node.bt_mobile_phone.field_brand
+    - field.field.node.bt_mobile_phone.field_price
+    - field.field.node.bt_mobile_phone.field_available
+    - field.field.node.bt_mobile_phone.field_bt_image
+    - node.type.bt_mobile_phone
+  module:
+    - user
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.bt_mobile_phone.default
+targetEntityType: node
+bundle: bt_mobile_phone
+mode: default
+content:
+  field_model:
+    label: above
+    type: string
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_available:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_bt_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    weight: 100
+hidden: {  }

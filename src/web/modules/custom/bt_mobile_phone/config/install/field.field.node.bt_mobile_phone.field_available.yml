@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available
+    - node.type.bt_mobile_phone
+  module:
+    - options
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.bt_mobile_phone.field_available
+field_name: field_available
+entity_type: node
+bundle: bt_mobile_phone
+label: Available
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'yes'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

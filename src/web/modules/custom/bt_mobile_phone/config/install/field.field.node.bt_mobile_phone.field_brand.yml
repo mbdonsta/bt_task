@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brand
+    - node.type.bt_mobile_phone
+    - taxonomy.vocabulary.bt_brand
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.bt_mobile_phone.field_brand
+field_name: field_brand
+entity_type: node
+bundle: bt_mobile_phone
+label: Brand
+description: ''
+required: true
+translatable: false
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bt_brand: bt_brand
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

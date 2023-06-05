@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.bt_mobile_phone
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.bt_mobile_phone.field_price
+field_name: field_price
+entity_type: node
+bundle: bt_mobile_phone
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+field_type: float

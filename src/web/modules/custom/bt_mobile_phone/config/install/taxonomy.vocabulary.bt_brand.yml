@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bt_mobile_phone
+name: Brand
+vid: bt_brand
+description: ''
+weight: 0

@@ -1,0 +1,7 @@
+bt_mobile_phone.list_json:
+  path: '/mobile-phones/list_json'
+  defaults:
+    _controller: '\Drupal\bt_mobile_phone\Controller\MobilePhoneController::listJson'
+    _title: 'Mobile Phones Json List'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - bt_mobile_phone
+id: node.field_available
+field_name: field_available
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'yes'
+      label: 'yes'
+    -
+      value: 'no'
+      label: 'no'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
